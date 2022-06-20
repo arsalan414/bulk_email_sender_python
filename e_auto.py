@@ -8,8 +8,6 @@ file = input('Enter the File Name: ')
 e = pd.read_excel(file)
 emails = e['emails'].values
 names = e['names'].values
-# for email,name in zip(emails,names):
-#     print("name: ",name.split(" ")[0]," email:",email)
 
 server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
